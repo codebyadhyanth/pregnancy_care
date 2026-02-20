@@ -88,11 +88,11 @@ app.use('/uploads', express.static('uploads'));
 // });
 
 
-// app.get("/", (req, res) => {
-//   res.status(200).json({
-//     message: "Pregnancy Care API Running",
-//   });
-// });
+app.get("/", (req, res) => {
+  res.status(200).json({
+    message: "Pregnancy Care API Running",
+  });
+});
 
 // app.post("/test", (req, res) => {
 //   console.log("Test route hit");
@@ -123,13 +123,13 @@ app.use("/api/baby", babyRoutes);
 // Placed AFTER all /api routes so API calls are not intercepted by the static handler.
 // app.get("*") is the SPA fallback: allows React Router to handle client-side routes
 // on hard refresh (e.g., refreshing /dashboard returns index.html, not 404).
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "../frontend/dist")));
+// if (process.env.NODE_ENV === "production") {
+//   app.use(express.static(path.join(__dirname, "../frontend/dist")));
 
-  app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "../frontend", "dist", "index.html"));
-  });
-}
+//   app.get("*", (req, res) => {
+//     res.sendFile(path.join(__dirname, "../frontend", "dist", "index.html"));
+//   });
+// }
 
 /* =========================
    404 HANDLER
