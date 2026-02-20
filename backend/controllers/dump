@@ -1,0 +1,50 @@
+// import { GoogleGenerativeAI } from '@google/generative-ai';
+
+// const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+
+// export const getPregnancyAdvice = async (req, res) => {
+//   try {
+//     const userId = req.user._id;
+    
+//     // Fetch user profile (dueDate, dietPreference, etc.)
+//     const user = await User.findById(userId).select('name dueDate dietPreference medicalConditions');
+    
+//     if (!user) {
+//       return res.status(404).json({ message: 'User not found' });
+//     }
+
+//     // Calculate current week from dueDate (simple: weeks remaining)
+//     const today = new Date();
+//     const dueDate = new Date(user.dueDate);
+//     const totalDays = Math.floor((dueDate - today) / (1000 * 60 * 60 * 24));
+//     const currentWeek = Math.max(1, Math.floor((280 - totalDays) / 7)); // 40 weeks total
+
+//     // Get symptom from request body (optional)
+//     const { symptom } = req.body;
+
+//     const prompt = `You are a pregnancy care assistant. 
+//     Patient: ${user.name || 'Mom'}
+//     Current Week: ${currentWeek} (due ${user.dueDate.toDateString()})
+//     Symptom: ${symptom || 'general wellness'}
+//     Diet: ${user.dietPreference || 'balanced'}
+//     Medical history: ${user.medicalConditions?.join(', ') || 'none'}
+    
+//     Give 3 short, safe, practical suggestions. Format as numbered list.`;
+
+//     const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+//     const result = await model.generateContent(prompt);
+//     const advice = await result.response.text();
+
+//     res.json({ 
+//       success: true, 
+//       advice: advice.trim(),
+//       currentWeek,
+//       dueDate: user.dueDate,
+//       symptom: symptom || 'general',
+//       timestamp: new Date().toISOString()
+//     });
+//   } catch (error) {
+//     console.error('Gemini error:', error);
+//     res.status(500).json({ message: 'AI service unavailable' });
+//   }
+// };
