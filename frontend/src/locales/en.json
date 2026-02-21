@@ -1,0 +1,115 @@
+{
+    "nav": {
+        "home": "Home",
+        "services": "Services",
+        "community": "Community",
+        "blog": "Blog",
+        "about": "About",
+        "contact": "Contact", 
+        "login": "Login / Sign Up",
+        "dashboard": "Dashboard",
+        "logout": "Logout",
+        "logoutSuccess": "Logged out successfully",
+        "anganwadi" : "Anganwadi",
+        "govSupport": "Gov Support"
+    },
+    "hero": {
+        "titleStart": "The Ultimate",
+        "titleHighlight": "Pregnancy Resource",
+        "subtitle": "Digital Pregnancy & Family Support System for Safe Motherhood. Compassionate care at every step of your journey.",
+        "getStarted": "Get Started",
+        "howItWorks": "How It Works"
+    },
+    "features": {
+        "heading": "Empowering Your Journey",
+        "subheading": "Comprehensive tools designed to support you through every stage of pregnancy and early motherhood.",
+        "adviceTitle": "AI Advice & Tips",
+        "adviceDesc": "Get instant, personalized advice for your pregnancy questions from our AI assistant.",
+        "communityTitle": "Community Support",
+        "communityDesc": "Connect with other mothers, share shared experiences, and find your support system.",
+        "healthTitle": "Health Monitoring",
+        "healthDesc": "Track your baby's growth and your own health vitals week by week."
+    },
+    "footer": {
+        "tagline": "Digital Pregnancy & Family Support System for Safe Motherhood.",
+        "services": "Services",
+        "company": "Company",
+        "emergency": "Emergency",
+        "call": "Call 108",
+        "support": "24/7 Emergency Ambulance Support",
+        "rights": "Janani Setu Smart System. All rights reserved."
+    },
+    "auth": {
+        "welcomeBack": "Welcome Back",
+        "signInSubtitle": "Sign in to access your dashboard",
+        "emailPlaceholder": "Email Address",
+        "passwordPlaceholder": "Password",
+        "signInButton": "Sign In",
+        "noAccount": "Don't have an account?",
+        "signUpLink": "Sign up",
+        "createAccount": "Create Account",
+        "joinCommunity": "Join the Janani Setu community",
+        "fullNamePlaceholder": "Full Name",
+        "signUpButton": "Sign Up",
+        "hasAccount": "Already have an account?",
+        "signInLink": "Sign in",
+        "loginSuccess": "Login successful!",
+        "signupSuccess": "Account created successfully!"
+    },
+    "dashboard": {
+        "title": "Dashboard",
+        "welcome": "Welcome to your dashboard. This is a placeholder."
+    },
+    "common": {
+        "pageNotFound": "Page Not Found",
+        "loading": "Loading..."
+    },
+    "community": {
+        "title": "Community Support",
+        "placeholder": "Share your journey...",
+        "post": "Post",
+        "loading": "Loading community...",
+        "noPosts": "No posts yet. Be the first to share!",
+        "deleteConfirm": "Are you sure you want to delete this post?",
+        "deleted": "Post deleted",
+        "viewDoc": "View Document",
+        "writeReply": "Write a reply...",
+        "anonymous": "Anonymous"
+    },
+    "services": {
+        "hero": {
+            "title": "Our Services",
+            "subtitle": "Comprehensive care and support tools designed for your pregnancy journey."
+        },
+        "tracking": {
+            "title": "Pregnancy Tracking",
+            "desc": "Monitor your baby's growth and your health milestones week by week."
+        },
+        "ai": {
+            "title": "AI Health Assistant",
+            "desc": "Get instant answers to your pregnancy questions 24/7."
+        },
+        "community": {
+            "title": "Moms Community",
+            "desc": "Connect with other expecting mothers and share experiences."
+        },
+        "blogs": {
+            "title": "Health Tips & Blogs",
+            "desc": "Expert articles on nutrition, exercise, and mental well-being."
+        },
+        "appointments": {
+            "title": "Appointment Reminders",
+            "desc": "Never miss a prenatal checkup with smart reminders."
+        },
+        "dashboard": {
+            "title": "Personalized Dashboard",
+            "desc": "All your health data and insights in one place."
+        },
+        "accessButton": "Access Service",
+        "cta": {
+            "title": "Ready to get started?",
+            "subtitle": "Join thousands of mothers who trust Janani Setu for a safer pregnancy.",
+            "button": "Join Now"
+        }
+    }
+}

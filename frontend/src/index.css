@@ -1,0 +1,103 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  /* Vibrant warm primary gradient: Vibrant Peach → Vibrant Pink */
+  --color-primary-start: #FF8A80;
+  --color-primary-end: #FF80AB;
+
+  /* Base background: warm peach-beige (kept as requested) */
+  --color-background-soft: #F4E7E1;
+
+  /* More vibrant accents */
+  --color-accent-peach: #FFB3BA;
+  --color-success: #4CAF50;
+
+  /* Emergency uses vibrant coral */
+  --color-emergency: #FF6B6B;
+
+  /* Text colors (no pure black, high contrast) */
+  --color-text-dark: #2D2D2D;
+  --color-text-muted: #6F7A83;
+
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Poppins", "Inter", sans-serif;
+
+  --radius-xl: 20px;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-background-soft);
+    color: var(--color-text-dark);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Hidden Scrollbar but still scrollable */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: none;
+}
+
+/* For IE and Edge */
+* {
+  -ms-overflow-style: none;
+}
+
+/* Scrollbar Hide Utility */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Cute notification slide-in from right (peeking) */
+@keyframes slide-in-peek {
+  0% {
+    transform: translateX(110%);
+    opacity: 0;
+  }
+
+  60% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+
+  80% {
+    transform: translateX(6%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.notification-slide-in {
+  animation: slide-in-peek 0.5s ease-out forwards;
+}
